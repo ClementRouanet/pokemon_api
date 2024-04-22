@@ -38,7 +38,7 @@ class Pokemon(models.Model) :
 
 
 class Pokemon_Types(models.Model) :
-    pokemon_id = models.IntegerField()
+    pokemon_id = models.IntegerField(primary_key=True)
     type_id = models.IntegerField()
     slot = models.IntegerField()
 
@@ -57,3 +57,11 @@ class Types(models.Model) :
 
     class Meta :
         db_table = 'types'
+
+
+
+class Item(models.Model):
+    identifier = models.CharField(max_length=100)
+
+    class Meta:
+        db_table = 'items'
