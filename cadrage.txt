@@ -51,6 +51,9 @@ Cadrage du projet :
     => GET tous les rôles si admin authentifié
 
 
+/api/role/{user id} (auth admin)
+    => PUT un rôle du 'user id' si admin authentifié
+
 
 /api/admin/users (auth admin)
     => GET tous les users si admin authentifié
