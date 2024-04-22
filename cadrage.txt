@@ -1,0 +1,51 @@
+Cadrage du projet :
+
+
+/api/items/{id item}
+    => GET 'identifier' avec 'id'
+
+
+/api/moves/{id moves}
+    => GET 'identifier' avec 'id'
+
+
+/api/pokemon/{id pokemon}
+    => GET 'identifier' avec 'id'
+
+
+/api/pokemon/{name pokemon}
+    => GET 'height', 'weight', 'base_experience' avec 'identifier'
+
+
+
+/api/pokemon/types/{identifier pokemon}
+    => pokemon : identifier pokemon -> pokemon id
+    => pokemon_types : pokemon id -> type_id 
+    => types : type_id -> identifier
+
+
+----------------------------------------------------------------------------------------
+
+
+/api/connexion
+    => POST avec 'pseudo' et 'mdp'
+
+
+/api/register
+    => POST 'pseudo', 'mdp', 'pokemons'
+
+
+-----------------------------------------------------------------------------------------
+
+/api/mesPokemons (auth)
+    => GET 'pokemons' en fonction de l'user authentifié
+
+
+
+/api/role (auth admin)
+    => GET tous les rôles si admin authentifié
+
+
+
+/api/admin/users (auth admin)
+    => GET tous les users si admin authentifié
