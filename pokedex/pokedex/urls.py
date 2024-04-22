@@ -17,8 +17,11 @@ Including another URLconf
 
 from django.urls import path
 
-from .views import get_move_identifier
+from .views import get_move_identifier, get_pokemon_identifier, get_pokemon_features, get_pokemon_type
 
 urlpatterns = [
     path('api/moves/<int:move_id>/', get_move_identifier, name='get_move_identifier'),
+    path('api/pokemon/<int:pokemon_id>/', get_pokemon_identifier, name='get_pokemon_identifier'),
+    path('api/pokemon/<str:pokemon_name>/', get_pokemon_features, name='get_pokemon_features'),
+    path('api/pokemon/types/<str:pokemon_name>/', get_pokemon_type, name='get_pokemon_type'),
 ]

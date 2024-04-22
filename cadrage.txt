@@ -5,14 +5,17 @@ Cadrage du projet :
     => GET 'identifier' avec 'id'
 
 
+OK
 /api/moves/{id moves}
     => GET 'identifier' avec 'id'
 
 
+OK
 /api/pokemon/{id pokemon}
     => GET 'identifier' avec 'id'
 
 
+OK
 /api/pokemon/{name pokemon}
     => GET 'height', 'weight', 'base_experience' avec 'identifier'
 
