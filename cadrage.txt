@@ -21,7 +21,7 @@ Cadrage du projet :
 /api/pokemon/types/{identifier pokemon}
     => pokemon : identifier pokemon -> pokemon id
     => pokemon_types : pokemon id -> type_id 
-    => types : type_id -> identifier
+    => types : type_id -> identifier (GET)
 
 
 ----------------------------------------------------------------------------------------
