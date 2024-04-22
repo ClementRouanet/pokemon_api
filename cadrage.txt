@@ -37,9 +37,14 @@ Cadrage du projet :
 
 -----------------------------------------------------------------------------------------
 
+
 /api/mesPokemons (auth)
     => GET pokemons du 'bag_id' en fonction de l'user authentifié
 
+
+/api/mesPokemons/{pokemon id} (auth)
+    => DELETE 'pokemon id' du 'bag_id'
+    => POST 'pokemon id' au 'bag_id'
 
 
 /api/role (auth admin)
