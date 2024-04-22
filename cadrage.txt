@@ -32,13 +32,13 @@ Cadrage du projet :
 
 
 /api/register
-    => POST 'pseudo', 'mdp', 'pokemons'
+    => POST 'pseudo', 'mdp', 'bag_id'
 
 
 -----------------------------------------------------------------------------------------
 
 /api/mesPokemons (auth)
-    => GET 'pokemons' en fonction de l'user authentifié
+    => GET pokemons du 'bag_id' en fonction de l'user authentifié
 
 
 
