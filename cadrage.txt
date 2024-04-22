@@ -32,7 +32,7 @@ Cadrage du projet :
 
 
 /api/register
-    => POST 'pseudo', 'mdp', 'bag_id'
+    => POST 'pseudo', 'mdp', 'bag_id' et 'role'
 
 
 -----------------------------------------------------------------------------------------
