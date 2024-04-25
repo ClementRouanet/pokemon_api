@@ -1,4 +1,7 @@
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from .utils import generate_jwt_token, authenticate_user
+import json
 
 from .models import Move, Pokemon, Pokemon_Types, Types, Item
 
@@ -76,3 +79,19 @@ def get_item_identifier(request, item_id):
     
 
 
+@csrf_exempt
+def connexion(request):
+    if request.method == 'POST':
+        request = json.loads(request.body.decode('utf-8'))
+
+        username = request['username']
+        password = request['password']
+
+        user = authenticate_user(username, password)
+        if user:
+            token = generate_jwt_token(user.id)
+            return JsonResponse({'token': token})
+        else:
+            return JsonResponse({'error': 'Invalid credentials'}, status=400)
+    else:
+        return JsonResponse({'error': 'Method not allowed'}, status=405)

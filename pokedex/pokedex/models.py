@@ -65,3 +65,22 @@ class Item(models.Model):
 
     class Meta:
         db_table = 'items'
+
+
+
+class User(models.Model):
+    id = models.AutoField(primary_key=True)
+    pseudo = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
+    role = models.CharField(max_length=100)
+
+
+    def check_password(self, password) :
+        if self.password == password :
+            return True
+        else :
+            return False
+
+
+    class Meta:
+        db_table = 'user'
