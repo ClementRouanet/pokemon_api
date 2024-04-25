@@ -73,3 +73,6 @@ def get_item_identifier(request, item_id):
         return JsonResponse(data)
     except Move.DoesNotExist:
         return JsonResponse({'error': 'Item not found'}, status=404)
+    
+
+
