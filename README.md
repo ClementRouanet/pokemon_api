@@ -41,7 +41,7 @@ Permet à un utilisateur de se connecter et avoir un token pour un pseudo et mot
   "password": "mdp"  
 }  
 ```  
-
+  
 - ```http://127.0.0.1:8000/api/register/```  
 Permet à un utilisateur de se créer un user avec un pokedex vide  
 
