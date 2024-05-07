@@ -14,6 +14,7 @@ M2 Data Engineering & AI  -  EFREI Paris
 
 - ```http://127.0.0.1:8000/api/moves/<int:move_id>/```  
 Récupère le nom du mouvement en fonction de l'id entré dans l'url  
+    - Requête **GET**
 
 
 - ```http://127.0.0.1:8000/api/pokemon/<int:pokemon_id>/```  
@@ -42,11 +43,16 @@ Permet à un utilisateur de se connecter et avoir un token pour un pseudo et mot
 }  
 ```  
 
-<font color="#FFFFFF">Texte en blanc</font>
-
 - ```http://127.0.0.1:8000/api/register/```  
 Permet à un utilisateur de se créer un user avec un pokedex vide  
-
+###### Body JSON :  
+```json  
+{
+  "username" : "pseudo",  
+  "password": "mdp",  
+  "role": "user"   // clé non obligatoire et à 'user' par défaut  
+} 
+```  
 
 - ```http://127.0.0.1:8000/api/mesPokemons/```  
 Permet à un utilisateur authentifié d'accéder à son pokedex (liste de pokemons)  
@@ -54,7 +60,13 @@ Permet à un utilisateur authentifié d'accéder à son pokedex (liste de pokemo
 
 - ```http://127.0.0.1:8000/api/addPokemons/```  
 Permet à un utilisateur authentifié d'ajouter un ou plusieurs pokemon(s) à son pokedex  
-
+```json  
+{
+  "username" : "pseudo",  
+  "password": "mdp",  
+  "role": "user"   // clé non obligatoire et à 'user' par défaut  
+} 
+```  
 
 - ```http://127.0.0.1:8000/api/remPokemons/```  
 Permet à un utilisateur authentifié de supprimer un ou plusieurs pokemon(s) à son pokedex  
