@@ -63,27 +63,46 @@ M2 Data Engineering & AI  -  EFREI Paris
 - ```http://127.0.0.1:8000/api/mesPokemons/```  
     - Permet à un utilisateur authentifié d'accéder à son pokedex (liste de pokemons)  
     - Requête **GET**  
-    - Renseigner le Token dans Authentification/Bearer
+    - Renseigner le Token dans Authentification/Bearer  
 
 
 - ```http://127.0.0.1:8000/api/addPokemons/```  
-Permet à un utilisateur authentifié d'ajouter un ou plusieurs pokemon(s) à son pokedex  
+    - Permet à un utilisateur authentifié d'ajouter un ou plusieurs pokemon(s) à son pokedex  
+    - Requête **POST**  
+    - Renseigner le Token dans Authentification/Bearer  
+###### Body JSON :  
 ```json  
 {
-  "username" : "pseudo",  
-  "password": "mdp",  
-  "role": "user"   // clé non obligatoire et à 'user' par défaut  
+  "pokemons": [pokemon_id, pokemon_id, ...]  
 } 
 ```  
 
 - ```http://127.0.0.1:8000/api/remPokemons/```  
-Permet à un utilisateur authentifié de supprimer un ou plusieurs pokemon(s) à son pokedex  
+    - Permet à un utilisateur authentifié de supprimer un ou plusieurs pokemon(s) à son pokedex  
+    - Requête **DELETE**  
+    - Renseigner le Token dans Authentification/Bearer  
+###### Body JSON :  
+```json  
+{
+  "pokemons": [pokemon_id, pokemon_id, ...]  
+} 
+```  
 
 
 - ```http://127.0.0.1:8000/api/role/```  
-Permet à un admin authentifié de récupérer le rôle de tout le monde (users + admins)  
+    - Permet à un admin authentifié de récupérer le rôle de tout le monde (users + admins)  
+    - Requête **GET**  
+    - Renseigner le Token dans Authentification/Bearer  (fonctionne uniquement avec les utilisateurs admin)
 
 
 - ```http://127.0.0.1:8000/api/admin/users/```  
-Permet à un admin authentifié de modifier le rôle à un user (admin -> user  ou  user -> admin)  
-
+    - Permet à un admin authentifié de modifier le rôle à un user (admin -> user  ou  user -> admin)  
+    - Requête **POST**  
+    - Renseigner le Token dans Authentification/Bearer  (fonctionne uniquement avec les utilisateurs admin)
+###### Body JSON :  
+```json  
+{
+  "username" : "pseudo",
+  "role": "nouveau_role"  
+} 
+```  
