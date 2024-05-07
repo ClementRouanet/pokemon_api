@@ -34,6 +34,11 @@ Récupère le nom de l'item en fonction de l'id entré dans l'url
 
 - ```http://127.0.0.1:8000/api/connexion/```  
 Permet à un utilisateur de se connecter et avoir un token pour un pseudo et mot de passe valide  
+Body JSON :  
+{  
+  "username" : "pseudo",  
+  "password": "mdp"  
+}  
 
 
 - ```http://127.0.0.1:8000/api/register/```  
