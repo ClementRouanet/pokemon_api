@@ -2,7 +2,11 @@
   
 
 Réalisé par HOUKMI Salaheddine & ROUANET Clément  
-M2 Data Engineering & AI  -  EFREI Paris
+M2 Data Engineering & AI  -  EFREI Paris  
+
+
+## Création de la DataBase :
+ Exécuter les deux scripts SQL : **pokedex.sql** et **Create User and Bag Tables.sql**  
 
 
 ## Lancement du programme :
