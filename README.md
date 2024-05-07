@@ -14,27 +14,32 @@ M2 Data Engineering & AI  -  EFREI Paris
 
 - ```http://127.0.0.1:8000/api/moves/<int:move_id>/```  
     - Récupère le nom du mouvement en fonction de l'id entré dans l'url  
-    - Requête **GET**
+    - Requête **GET**  
 
 
 - ```http://127.0.0.1:8000/api/pokemon/<int:pokemon_id>/```  
-Récupère le nom du pokemon en fonction de l'id entré dans l'url  
+    - Récupère le nom du pokemon en fonction de l'id entré dans l'url  
+    - Requête **GET**  
 
 
 - ```http://127.0.0.1:8000/api/pokemon/<str:pokemon_name>/```  
-Récupère le nom la hauteur, le poids et l'expérience de base en fonction du nom du pokemon entré dans l'url  
+    - Récupère le nom la hauteur, le poids et l'expérience de base en fonction du nom du pokemon entré dans l'url  
+    - Requête **GET**  
 
 
 - ```http://127.0.0.1:8000/api/pokemon/types/<str:pokemon_name>/```  
-Récupère le le type en fonction du nom du pokemon entré dans l'url  
+    - Récupère le le type en fonction du nom du pokemon entré dans l'url  
+    - Requête **GET**  
 
 
 - ```http://127.0.0.1:8000/api/items/<int:item_id>/```  
-Récupère le nom de l'item en fonction de l'id entré dans l'url  
+    - Récupère le nom de l'item en fonction de l'id entré dans l'url  
+    - Requête **GET**  
 
 
 - ```http://127.0.0.1:8000/api/connexion/```  
-Permet à un utilisateur de se connecter et avoir un token pour un pseudo et mot de passe valide  
+    - Permet à un utilisateur de se connecter et avoir un token pour un pseudo et mot de passe valide  
+    - Requête **POST**  
 ###### Body JSON :  
 ```json  
 {  
@@ -44,7 +49,8 @@ Permet à un utilisateur de se connecter et avoir un token pour un pseudo et mot
 ```  
 
 - ```http://127.0.0.1:8000/api/register/```  
-Permet à un utilisateur de se créer un user avec un pokedex vide  
+    - Permet à un utilisateur de se créer un user avec un pokedex vide  
+    - Requête **POST**  
 ###### Body JSON :  
 ```json  
 {
@@ -55,7 +61,9 @@ Permet à un utilisateur de se créer un user avec un pokedex vide
 ```  
 
 - ```http://127.0.0.1:8000/api/mesPokemons/```  
-Permet à un utilisateur authentifié d'accéder à son pokedex (liste de pokemons)  
+    - Permet à un utilisateur authentifié d'accéder à son pokedex (liste de pokemons)  
+    - Requête **GET**  
+    - Renseigner le Token dans Authentification/Bearer
 
 
 - ```http://127.0.0.1:8000/api/addPokemons/```  
