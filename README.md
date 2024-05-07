@@ -1,13 +1,13 @@
 #              API et Web Services   -   Projet Pokedex  
   
 
-Réalisé par HOUKMI Salaheddine & ROUANET Clément
+Réalisé par HOUKMI Salaheddine & ROUANET Clément  
 M2 data Engineering & AI  -  EFREI Paris
 
 
 ## Lancement du programme :
- Se placer dans le chemin : **/pokemon_api/pokedex/**  
- Exécuter la commande suivante : **python3 manage.py runserver**
+ Se placer dans le chemin :  **/pokemon_api/pokedex/**  
+ Exécuter la commande suivante :  **python3 manage.py runserver**
 
 
 ## Voici la liste des routes disponibles avec les requêtes à faire :
