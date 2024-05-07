@@ -1,0 +1,200 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Pokedex",
+    "collectionId": "de64efaa-e788-45ab-b612-e60b73659771",
+    "dateExported": "2024-05-07T12:10:56.688Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3f154173-d7b3-4132-b563-c92fc6e1d0f0",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "Item",
+            "url": "http://127.0.0.1:8000/api/items/2",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-04-22T15:41:48.689Z",
+            "modified": "2024-04-22T15:42:29.871Z",
+            "headers": []
+        },
+        {
+            "_id": "73183fe3-0f69-4030-a816-b94f4077d144",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "move",
+            "url": "http://127.0.0.1:8000/api/moves/17",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-22T13:15:13.063Z",
+            "modified": "2024-04-22T14:05:57.054Z",
+            "headers": []
+        },
+        {
+            "_id": "5b5e6547-460e-4e08-9c91-f6e2156ac349",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "pokemon_id",
+            "url": "http://127.0.0.1:8000/api/pokemon/kakuna",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-22T13:59:51.956Z",
+            "modified": "2024-05-07T11:39:51.355Z",
+            "headers": []
+        },
+        {
+            "_id": "bb34ba30-0f88-4936-a103-e6c8a6f82f91",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "pokemon_features",
+            "url": "http://127.0.0.1:8000/api/pokemon/15",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-04-22T14:18:45.656Z",
+            "modified": "2024-04-22T14:18:45.656Z",
+            "headers": []
+        },
+        {
+            "_id": "8fab4fec-ce8d-410d-9dc7-dcbb40e04b81",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "pokemon_type",
+            "url": "http://127.0.0.1:8000/api/pokemon/types/bulbasaur",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-22T14:47:46.013Z",
+            "modified": "2024-04-22T15:36:37.157Z",
+            "headers": []
+        },
+        {
+            "_id": "514443c1-6458-4848-9e42-6e4814e37b9f",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "connexion",
+            "url": "http://127.0.0.1:8000/api/connexion/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-04-25T07:42:37.698Z",
+            "modified": "2024-05-07T12:07:01.000Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"EFREI\",\n  \"password\": \"123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5f92bf7a-d1bc-4f50-af50-4bdda7ecf530",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "register",
+            "url": "http://127.0.0.1:8000/api/register/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-05-06T14:14:32.196Z",
+            "modified": "2024-05-07T12:03:24.128Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"zone\",\n  \"password\": \"123\",\n  \"role\": \"user\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8113c59d-7b00-4786-89f4-26f5e623f416",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "my_pokedex",
+            "url": "http://127.0.0.1:8000/api/mesPokemons/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-05-06T16:08:53.255Z",
+            "modified": "2024-05-07T12:07:27.043Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNzE1MDg1NDIwfQ.oIgyNyEdP-6WCGpoRRcAT0nB2fKIxdjoSoChjf0zIj0"
+            }
+        },
+        {
+            "_id": "29482445-39ef-4ed0-8fe5-18154ae4b96e",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "my_pokedex",
+            "url": "http://127.0.0.1:8000/api/addPokemons/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-05-07T09:22:53.585Z",
+            "modified": "2024-05-07T12:07:41.577Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pokemons\": [3,7]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNzE1MDg1NDIwfQ.oIgyNyEdP-6WCGpoRRcAT0nB2fKIxdjoSoChjf0zIj0"
+            }
+        },
+        {
+            "_id": "85e3a8cb-f5a1-45ff-ab8a-c58012468201",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "my_pokedex",
+            "url": "http://127.0.0.1:8000/api/remPokemons/",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-05-07T09:36:06.056Z",
+            "modified": "2024-05-07T09:45:19.566Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pokemons\": [2, 4]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE3MTUwNzY0NzJ9.9FjBMVVU5GzXdMb_fX4aLuQOf2KluK0y_eiqd9hkmEY"
+            }
+        },
+        {
+            "_id": "051ba166-f515-4780-958f-75d31f93f619",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "users_roles",
+            "url": "http://127.0.0.1:8000/api/role/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-05-07T09:59:32.108Z",
+            "modified": "2024-05-07T11:28:27.769Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNzE1MDgzMDc4fQ.qumIzyHAp4e0JfRDTsjQX32TdhEqtQxyONBBmUGgjkA"
+            }
+        },
+        {
+            "_id": "bfdc79d6-0ed6-4d9f-b741-e8d9cae189a5",
+            "colId": "de64efaa-e788-45ab-b612-e60b73659771",
+            "containerId": "",
+            "name": "update users roles",
+            "url": "http://127.0.0.1:8000/api/admin/users/",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-05-07T11:26:17.817Z",
+            "modified": "2024-05-07T12:05:58.235Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"test\",\n  \"role\": \"admin\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNzE1MDgzMDc4fQ.qumIzyHAp4e0JfRDTsjQX32TdhEqtQxyONBBmUGgjkA"
+            }
+        }
+    ],
+    "ref": "YDbi2DsRwXsj2WxjslXfC4RYi9PQjZBfe-tI7ixxLOhFDpt8oCcJ1ZL9YTyiWFjYvGkchPIMlxfnVvkkmu1Jfg"
+}

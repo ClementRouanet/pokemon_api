@@ -1,5 +1,9 @@
 from django.db import models
+from django.contrib.auth.hashers import make_password, check_password
 
+
+
+# Classe des mouvements 
 class Move(models.Model) :
     id = models.IntegerField(primary_key=True)
     identifier = models.CharField(max_length=100)
@@ -21,6 +25,7 @@ class Move(models.Model) :
 
 
 
+# Classe des pokemons 
 class Pokemon(models.Model) :
     id = models.IntegerField(primary_key=True)
     identifier = models.CharField(max_length=100)
@@ -37,6 +42,7 @@ class Pokemon(models.Model) :
 
 
 
+# Classe des types de pokemons 
 class Pokemon_Types(models.Model) :
     pokemon_id = models.IntegerField(primary_key=True)
     type_id = models.IntegerField()
@@ -48,6 +54,7 @@ class Pokemon_Types(models.Model) :
 
 
 
+# Classe des types
 class Types(models.Model) :
     id = models.IntegerField(primary_key=True)
     identifier = models.CharField(max_length=100)
@@ -60,27 +67,54 @@ class Types(models.Model) :
 
 
 
-class Item(models.Model):
+# Classe des items
+class Item(models.Model) :
     identifier = models.CharField(max_length=100)
 
-    class Meta:
+    class Meta :
         db_table = 'items'
 
 
 
-class User(models.Model):
+# Classe des users
+class User(models.Model) :
     id = models.AutoField(primary_key=True)
     pseudo = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
     role = models.CharField(max_length=100)
 
 
+    # Fonction pour créer un nouvel utilisateur
+    def create_user(self, pseudo, password, role='user') :
+        password_hash = make_password(password)
+
+        self.pseudo = pseudo
+        self.password = password_hash
+        self.role = role
+
+        self.save()
+    
+
+    # Fonction qui vérifie l'exactitude du mot de passe lors de l'authentification
     def check_password(self, password) :
-        if self.password == password :
-            return True
-        else :
-            return False
+        return check_password(password, self.password)
+    
+
+    # Fonction qui renvoie vrai si l'utilisateur est un admin et faux sinon
+    def is_admin(self) :
+        return self.role == 'admin'
 
 
-    class Meta:
+    class Meta :
         db_table = 'user'
+
+
+
+# Classe des sacs (pokedex)
+class Bag (models.Model) :
+    user_id = models.IntegerField(primary_key=True)
+    pokemon_id = models.IntegerField()
+
+
+    class Meta :
+        db_table = 'bag'
