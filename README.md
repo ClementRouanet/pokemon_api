@@ -1,4 +1,7 @@
-#              API et Web Services   -   Projet Pokedex<
+#              API et Web Services   -   Projet Pokedex
+
+
+
 
 ### Réalisé par HOUKMI Salaheddine & ROUANET Clément
 ### M2 data Engineering & AI  -  EFREI Paris
