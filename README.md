@@ -12,5 +12,5 @@ M2 data Engineering & AI  -  EFREI Paris
 
 ## Voici la liste des routes disponibles avec les requêtes à faire :
 
-- http://127.0.0.1:8000/api/moves/<int:move_id>/  
+- ```http://127.0.0.1:8000/api/moves/<int:move_id>/``` 
 Récupère le nom du mouvement en fonction de l'id entré dans l'url
