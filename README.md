@@ -73,7 +73,7 @@ M2 Data Engineering & AI  -  EFREI Paris
 ###### Body JSON :  
 ```json  
 {
-  "pokemons": ["pokemon_id", "pokemon_id", "..."]  
+  "pokemons": ["pokemon_id", "pokemon_id", "..."]   // Les id sont des int  
 } 
 ```  
 
@@ -84,7 +84,7 @@ M2 Data Engineering & AI  -  EFREI Paris
 ###### Body JSON :  
 ```json  
 {
-  "pokemons": ["pokemon_id", "pokemon_id", "..."]  
+  "pokemons": ["pokemon_id", "pokemon_id", "..."]   // Les id sont des int  
 } 
 ```  
 
